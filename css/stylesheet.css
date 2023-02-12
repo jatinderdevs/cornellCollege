@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap');
+
+:root {
+    --mainColor: #071d4e;
+    --mixture: #edd86b;
+}
+
+* {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Raleway', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: ease-in-out all 450ms;
+}
+
+a {
+    text-transform: capitalize;
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    color: #444;
+    line-height: 1.8;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+
+}
+
+section {
+    padding: 60px 0;
+}
+
+
+
+
+
+
+.hero {
+    padding: 0;
+}
+
+.heading {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.aboutcard {
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 0px 60px #bebebe, 0px 0px 0px #ffffff;
+    padding: 20px 40px;
+}
+
+.aboutimg {
+    padding: 20px;
+}
+
+.abouttxt p {
+    text-align: justify;
+}
+
+.mybtn {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--mainColor);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.mybtn:hover {
+    background-color: #fff;
+    box-shadow: 0px 15px 20px rgba(61, 46, 229, 0.4);
+    color: var(--mainColor);
+    text-decoration: none;
+    transform: translateY(-7px);
+}
+
+.down-mark-line {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+}
+
+.down-mark-line:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    background: url('../img/highlightUnderline.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    -webkit-animation: section-animation 3s infinite;
+    animation: section-animation 3s infinite;
+}
+
+@-webkit-keyframes section-animation {
+    0% {
+        width: 0
+    }
+
+    15% {
+        width: 100%
+    }
+
+    85% {
+        opacity: 1
+    }
+
+    90% {
+        width: 100%;
+        opacity: 0
+    }
+
+    to {
+        width: 0;
+        opacity: 0
+    }
+}
+
+.service {
+    background: #fff;
+}
+
+.serviceCard {
+
+    display: flex;
+    background: white;
+    padding: 10px;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #dfdfdf;
+    margin-bottom: 20px;
+    cursor: pointer;
+    justify-content: space-around;
+}
+
+.serviceCard:hover {
+    background: var(--mainColor);
+    color: white;
+    box-shadow: 2px 0 20px #dfdfdf;
+}
+
+.serviceCard h4 {
+    color: #333;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.serviceCard:hover h4 {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.item {
+    position: relative;
+}
+
+.layer {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.layer h1 {
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.layertxt {
+    padding: 20px;
+}
+
+.layertxt p {
+
+    color: #fff;
+}
+
+
+.testimonial {
+    background: url('../img/testbg.webp') no-repeat center;
+    background-size: cover;
+}
+
+.testi1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+.testitxt p {
+    text-align: justify;
+}
+
+.testimg {
+    box-shadow: 0 0 10px #dfdfdf;
+    border: 4px solid var(--mainColor);
+    border-radius: 50%;
+}
+
+.map {
+    padding: 0px;
+}
+
+footer {
+    background: var(--mainColor);
+}
+
+.footcard h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--mixture);
+}
+
+.footcard p {
+    color: #fff;
+}
+
+.foot {
+    list-style-type: none;
+}
+
+.foot li {
+    margin: 15px 0;
+}
+
+.foot li a {
+    font-weight: 200;
+    color: white;
+}
+
+.foot li p {
+    font-weight: 200;
+
+}
+
+.copy {
+    background: #25428391;
+    padding: 20px 10px;
+    box-shadow: 0 0 10px #333;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy p,
+.copy a {
+    color: white;
+}
+
+.whyus {
+    background: var(--mainColor);
+}
+
+.cardWhy {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.cardWhy h3 {
+    margin: 0;
+    color: white;
+}
+
+.socialfoot {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.socialfoot li {
+    background: var(--mixture);
+    padding: 10px;
+    box-shadow: 0 0 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.socialfoot li:hover {
+    transform: rotateY(360deg);
+}
+
+@media (min-width:320px) {
+    .aboutcard {
+        margin-top: 0rem;
+    }
+
+    .serviceCard {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .layer h1 {
+        font-size: 2rem;
+    }
+
+    .header::after {
+        width: 68%;
+    }
+}
+
+
+@media (min-width:481px) {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+
+@media (min-width:768px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
+@media (min-width:992px) {
+
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .aboutcard {
+        margin-top: -9rem;
+    }
+
+    .serviceCard {
+        flex-direction: row;
+    }
+
+    .layer h1 {
+        font-size: 4rem;
+    }
+
+    .header::after {
+        width: 88%;
+    }
+
+
+}
