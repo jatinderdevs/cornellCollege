@@ -215,6 +215,7 @@ section {
     justify-content: center;
 }
 
+
 .testitxt p {
     text-align: justify;
 }
@@ -309,6 +310,10 @@ footer {
     transform: rotateY(360deg);
 }
 
+.courses {
+    padding: 0;
+}
+
 @media (min-width:320px) {
     .aboutcard {
         margin-top: 0rem;
@@ -326,6 +331,15 @@ footer {
     .header::after {
         width: 68%;
     }
+
+    .testi1 {
+        flex-direction: column;
+    }
+
+    .testitxt {
+        width: auto;
+    }
+
 }
 
 
@@ -354,6 +368,14 @@ footer {
 
     .header::after {
         width: 88%;
+    }
+
+    .testi1 {
+        flex-direction: row;
+    }
+
+    .testitxt {
+        width: 50%;
     }
 
 
