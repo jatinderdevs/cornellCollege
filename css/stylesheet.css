@@ -387,6 +387,93 @@ footer {
     font-weight: 500;
 }
 
+.txtbox {
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px;
+    border: unset;
+    background: #efefef;
+}
+
+.txtbox::placeholder {
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.txtbox:focus {
+    border: 1px solid var(--mainColor);
+}
+
+.contactuscard {
+    padding: 20px;
+    background: #f8f8f9;
+    border-radius: 10px;
+}
+
+.contactcard {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.contactuscard h3 {
+    font-weight: 800;
+    font-size: 1.2rem;
+
+}
+
+.contactcard h6 {
+
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--mainColor);
+}
+
+.contactcard span {
+    font-size: 14px;
+}
+
+.ctxt p {
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+}
+
+.ctxt h4 {
+    font-weight: bold;
+    color: var(--mainColor);
+}
+
+.ccard {
+    box-shadow: 0 0 10px #dfdfdf;
+    overflow: hidden;
+}
+
+.rightbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    box-shadow: 0 0 10px #f9f9fb;
+    background: #f2f2f2;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--mainColor);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background: var(--mainColor) !important;
+    color: var(--mixture) !important;
+}
+
+.tbl p {
+    margin: 0;
+}
+
 @media (min-width:320px) {
     .aboutcard {
         margin-top: 0rem;

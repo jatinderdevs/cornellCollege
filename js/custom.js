@@ -5,7 +5,7 @@ $("#banner").owlCarousel({
   items: 1,
   animateOut: "fadeOut",
   smartSpeed: 450,
-  autoplay: false,
+  autoplay: true,
   autoplayTimeout: 2500,
 });
 $("#testi").owlCarousel({
