@@ -406,7 +406,7 @@ footer {
 
 .contactuscard {
     padding: 20px;
-    background: #f8f8f9;
+    background: #ffee958a;
     border-radius: 10px;
 }
 
@@ -450,13 +450,19 @@ footer {
     overflow: hidden;
 }
 
+.ccard:hover {
+    box-shadow: unset;
+}
+
 .rightbar {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     padding: 10px;
+    padding-bottom: 40px;
     box-shadow: 0 0 10px #f9f9fb;
     background: #f2f2f2;
+    border-radius: 10px;
 }
 
 .nav-link {
@@ -474,9 +480,38 @@ footer {
     margin: 0;
 }
 
+ul>li>span {
+    font-size: 14px;
+}
+
+.whatsap {
+    padding: 10px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99999;
+    animation: beat 1s infinite alternate;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1.0);
+
+    }
+}
+
 @media (min-width:320px) {
     .aboutcard {
         margin-top: 0rem;
+    }
+
+    .abouttxt p {
+        text-align: justify;
     }
 
     .serviceCard {
@@ -509,6 +544,17 @@ footer {
         font-size: 2rem;
     }
 
+    .flexresp {
+        flex-direction: unset;
+    }
+
+    .about::before {
+        left: unset;
+        transform: unset;
+        width: 100%;
+        background: rgba(8, 30, 80, .9);
+    }
+
 }
 
 
@@ -525,6 +571,20 @@ footer {
 
     .contactCard>div>h1 {
         font-size: 3.5em;
+    }
+
+
+
+    .about::before {
+        left: -150px;
+
+        background: var(--mainColor);
+        transform: skew(-20deg);
+        width: 76%;
+    }
+
+    .abouttxt p {
+        text-align: left;
     }
 
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
@@ -555,6 +615,18 @@ footer {
 
     .testitxt {
         width: 50%;
+    }
+
+    .flexresp {
+        flex-direction: column;
+    }
+
+    .about::before {
+        left: -140px;
+
+        background: var(--mainColor);
+        transform: skew(-26deg);
+        width: 63%;
     }
 
 
