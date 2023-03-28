@@ -40,7 +40,9 @@ section {
 
 
 
-
+.owl-dots {
+    display: none;
+}
 
 
 .hero {
@@ -267,6 +269,9 @@ section {
     box-shadow: 0 0 10px #dfdfdf;
     border: 4px solid var(--mainColor);
     border-radius: 50%;
+    width: 100px;
+    padding: 10px;
+    overflow: hidden;
 }
 
 .map {

@@ -22,7 +22,7 @@ marquee {
 }
 
 .header {
-
+    overflow: hidden;
     position: relative;
     top: 0;
     left: 0;
@@ -33,7 +33,7 @@ marquee {
     box-shadow: 0px 6px 10px #9999;
 }
 
-/* .header::after {
+.header::after {
     content: '';
     position: absolute;
     right: -20%;
@@ -44,7 +44,7 @@ marquee {
     bottom: 0;
     background: var(--mainColor);
     transform: skew(-45deg);
-} */
+}
 
 .wrapper {
     padding: 0 10px;
@@ -58,7 +58,7 @@ marquee {
 
 .menu li a,
 .menu li span {
-    color: var(--mainColor);
+    color: var(--mixture);
     border-bottom: 2px solid transparent;
 }
 
